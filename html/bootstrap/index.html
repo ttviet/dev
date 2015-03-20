@@ -15,116 +15,74 @@
     </head>
     <body>
     <div class="container">
-      <div class="btn-group dropup">
-        <button type="button" class="btn btn-default">Dropup</button>
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"><span class="hidden">Action</span></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"><span class="hidden">...</span></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
       </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          Action<span class="caret"><span class="hidden">Action</span></span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"><span class="hidden">...</span></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
+      <br/>
+      <div class="input-group ">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-addon" id="basic-addon2">@example.com</span>
       </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          Action<span class="caret"><span class="hidden">Action</span></span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"><span class="hidden">...</span></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
+      <br/>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-addon">.00</span>
+      </div>
+      <br/>
+      <div class="input-group input-group-xs">
+        <span class="input-group-addon" id="basic-addon3">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon3">
+      </div>
+      <br/>
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon4">
+        <span class="input-group-addon" id="basic-addo4">@example.com</span>
+      </div>
+      <br/>
+      <div class="input-group input-group-sm">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-addon">.00</span>
       </div>
       <hr/>
-      <div class="btn-group">
-        <button type="button" class="btn btn-lg btn-danger">Danger</button>
-        <button type="button" class="btn btn-lg btn-danger dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"><span class="hidden">...</span></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"><span class="hidden">...</span></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
+      <br/>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <input type="checkbox" aria-label="...">
+            </span>
+            <input type="text" class="form-control" aria-label="...">
+          </div><!-- /input-group -->
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-3">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <input type="radio" aria-label="...">
+            </span>
+            <input type="text" class="form-control" aria-label="...">
+          </div>
+        </div>
       </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"><span class="hidden">...</span></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"><span class="hidden">...</span></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
+            <input type="text" class="form-control" placeholder="Search for..."/>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-sm btn-success">Success</button>
-        <button type="button" class="btn btn-sm btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"><span class="hidden">...</span></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"><span class="hidden">...</span></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-xs btn-warning">Warning</button>
-        <button type="button" class="btn btn-xs btn-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"><span class="hidden">...</span></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"><span class="hidden">...</span></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div>
-      <div class="btn-group ">
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          <span class="caret"><span class="hidden">...</span></span>
-          <span class="sr-only">Toggle Dropdown</span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"><span class="hidden">...</span></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div>
-  </div>
+    </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
