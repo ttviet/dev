@@ -15,74 +15,68 @@
     </head>
     <body>
     <div class="container">
-      <div class="input-group input-group-lg">
-        <span class="input-group-addon" id="basic-addon1">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-      </div>
-      <br/>
-      <div class="input-group ">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
-        <span class="input-group-addon" id="basic-addon2">@example.com</span>
-      </div>
-      <br/>
-      <div class="input-group input-group-sm">
-        <span class="input-group-addon">$</span>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-        <span class="input-group-addon">.00</span>
-      </div>
-      <br/>
-      <div class="input-group input-group-xs">
-        <span class="input-group-addon" id="basic-addon3">@</span>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon3">
-      </div>
-      <br/>
-      <div class="input-group input-group-lg">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon4">
-        <span class="input-group-addon" id="basic-addo4">@example.com</span>
-      </div>
-      <br/>
-      <div class="input-group input-group-sm">
-        <span class="input-group-addon">$</span>
-        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-        <span class="input-group-addon">.00</span>
-      </div>
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+      </ul>
       <hr/>
-      <br/>
-      <div class="row">
-        <div class="col-lg-2">
-          <div class="input-group">
-            <span class="input-group-addon">
-              <input type="checkbox" aria-label="...">
-            </span>
-            <input type="text" class="form-control" aria-label="...">
-          </div><!-- /input-group -->
-        </div><!-- /.col-lg-6 -->
-        <div class="col-lg-3">
-          <div class="input-group">
-            <span class="input-group-addon">
-              <input type="radio" aria-label="...">
-            </span>
-            <input type="text" class="form-control" aria-label="...">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="input-group">
-            <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button></span>
-            <input type="text" class="form-control" placeholder="Search for..."/>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search for...">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Go!</button>
-            </span>
-          </div>
-        </div>
-      </div>
+      <ul class="nav nav-pills">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+      </ul>
     </div>
+    <hr/>
+    <ul class="nav nav-tabs nav-justified">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <hr/>
+    <ul class="nav nav-pills nav-justified">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+    <hr/>
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#">Home</a></li>
+      <li role="presentation"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+      <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+    </ul>
+    <hr/>
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+      <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          Dropdown <span class="caret"><span class="hidden">Dropdown</span></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+          <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+      </ul>
+    </ul>
+    <hr/>
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#">Profile</a></li>
+      <li role="presentation"><a href="#">Messages</a></li>
+      <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          Dropdown <span class="caret"><span class="hidden">Dropdown</span></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation"><a href="#">Home</a></li>
+          <li role="presentation"><a href="#">Profile</a></li>
+          <li role="presentation"><a href="#">Messages</a></li>
+          <li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+      </ul>
+    </ul>
+
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
