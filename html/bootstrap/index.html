@@ -15,36 +15,13 @@
     </head>
     <body>
     <div class="container" >
-      <img id="myImage" onclick="changeImage()" src="http://www.w3schools.com/js/pic_bulboff.gif" alt="gamek" width="100" height="180">
-
-        <p>Click the light bulb to turn on/off the light.</p>
-
-        <script>
-        function changeImage() {
-            var image = document.getElementById('myImage');
-            if (image.src.match("bulbon")) {
-                image.src = "http://www.w3schools.com/js/pic_bulboff.gif";
-            } else {
-                image.src = "http://www.w3schools.com/js/pic_bulbon.gif";
-            }
-        }
-        </script>
-        <p>Please input a number between 1 and 10:</p>
-        <input id="numb" type="number">
-        <button type="button" onclick="myFunction()">Submit</button>
-        <p id="demo"></p>
-        <script>
-        function myFunction() {
-            var x, text;
-            x = document.getElementById("numb").value;
-            if (isNaN(x) || x < 1 || x > 10) {
-                text = "Input not valid";
-            } else {
-                text = "Input OK";
-            }
-            document.getElementById("demo").innerHTML = text;
-        }
-        </script>
+      <p id="demo">Display the result here.</p>
+      <script>
+      function myFunction(){
+         return "Hello World"
+      }
+      document.getElementById("demo").innerHTML = myFunction();
+      </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
