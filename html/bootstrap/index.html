@@ -24,11 +24,20 @@
     </head>
     <body>
     <div class="container" >
-        <form name="myForm" action="demo_form.asp"
-        onsubmit="return validateForm()" method="post">
-        Name: <input type="text" name="fname">
-        <input type="submit" value="Submit">
-        </form>
+      <input id="id1" type="number" min="100" max="300">
+        <button onclick="myFunction()">OK</button>
+        <p id="demo"></p>
+        <script>
+        function myFunction() {
+            var inpObj = document.getElementById("id1");
+            if (inpObj.validity.rangeOverflow || inpObj.validity.rangeUnderflow) {
+                alert("Wrong Number");
+                return false;
+            } else {
+                document.getElementById("demo").innerHTML = "Input OK";
+            }
+        }
+        </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
