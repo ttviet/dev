@@ -22,15 +22,12 @@
           this.lastname = lastname;
           this.age = age;
           this.eyecolor = eyecolor;
-          this.changename = function (name) {
-              this.lastname = name;
-          }
+          this.nationality = "English";
+          this.name = function() {return this.firstname + " " + this.lastname;}
       }
-      var man = new person("john","asd","25","blue");
-      man.changename("Doe");
-      document.getElementById("demo").innerHTML =
-      "His name is " + man.firstname + " " + man.lastname + " " +
-      man.age + " year old and eye color is" + man.eyecolor;
+      var man = new person("John", "Doe", 50, "blue");
+      var woman = new person("Sally", "Rally", 48, "green");
+      document.getElementById("demo").innerHTML = man.name();
       </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
