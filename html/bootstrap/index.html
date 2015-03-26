@@ -15,17 +15,17 @@
     </head>
     <body>
     <div class="container" >
-      <p id="demo"></p>
+    <p id="demo"></p>
       <script>
-        function person(first, last, age, eyecolor) {
-            this.firstName = first;
-            this.lastName = last;
-            this.age = age;
-            this.eyeColor = eyecolor;
-        }
-        var myFather = new person("John", "Doe", 50, "blue");
-        var myMother = new person("Sally", "Rally", 48, "green");
-        document.getElementById("demo").innerHTML= myFather.firstName;
+      var txt = "";
+      var person = {fname:"John", lname:"Doe", age:25};
+      var x;
+      person.nationality = "English";
+      delete person.lname;
+      for (x in person) {
+          txt += person[x] + " ";
+      }
+      document.getElementById("demo").innerHTML=txt;
       </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
