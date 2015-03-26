@@ -12,32 +12,21 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <script>
-            function validateForm() {
-            var x = document.forms["myForm"]["fname"].value;
-            if (x == null || x == "") {
-                alert("Name must be filled out");
-            return false;
-            }
-            }
-        </script>
     </head>
     <body>
     <div class="container" >
-      <input id="id1" type="number" min="100" max="300">
-        <button onclick="myFunction()">OK</button>
-        <p id="demo"></p>
-        <script>
-        function myFunction() {
-            var inpObj = document.getElementById("id1");
-            if (inpObj.validity.rangeOverflow || inpObj.validity.rangeUnderflow) {
-                alert("Wrong Number");
-                return false;
-            } else {
-                document.getElementById("demo").innerHTML = "Input OK";
-            }
+      <p id="demo"></p>
+      <script>
+        function person(first, last, age, eyecolor) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eyecolor;
         }
-        </script>
+        var myFather = new person("John", "Doe", 50, "blue");
+        var myMother = new person("Sally", "Rally", 48, "green");
+        document.getElementById("demo").innerHTML= myFather.firstName;
+      </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
