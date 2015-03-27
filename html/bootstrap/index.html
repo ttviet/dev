@@ -15,17 +15,65 @@
     </head>
     <body>
     <div class="container" >
-      <p id="intro">Hello World!</p>
+    <p id="demo"></p>
 
-      <p>This example demonstrates the <b>getElementById</b> method!</p>
+    <script>
+    var x = document.getElementById("main");
+    var y = x.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML =
+    'The first paragraph (index 0) inside "main" is: ' + y[0].innerHTML;
+    </script>
 
-      <p id="demo5"></p>
+    <p>Hello World!</p>
 
-      <script>
-      myElement = document.getElementById("intro");
-      document.getElementById("demo5").innerHTML =
-      "The text from the intro paragraph is " + myElement.innerHTML;
-      </script>
+    <p class="intro">The DOM is very useful.</p>
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+    <p id="demo1"></p>
+
+    <script>
+    var x = document.querySelectorAll("p.intro");
+    document.getElementById("demo1").innerHTML =
+    'The first paragraph (index 0) with class="intro": ' + x[1].innerHTML;
+    </script>
+
+    <form id="frm1" action="form_action.asp">
+      First name: <input type="text" name="fname" value="Donald"><br>
+      Last name: <input type="text" name="lname" value="Duck"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <p>Click "Try it" to display the value of each element in the form.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo2"></p>
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("frm1");
+        var text = "";
+        var i;
+        for (i = 0; i < x.length ;i++) {
+            text += x.elements[i].value + "<br>";
+        }
+        document.getElementById("demo2").innerHTML = text;
+    }
+    </script>
+
+    <p>Use the DOM to change my text!</p>
+    <p>Use the DOM to asdd my text!</p>
+    <script>
+    document.querySelectorAll("p")[1].innerHTML="Good Job!";
+    </script>
+
+    <p id="demo3"></p>
+
+    <script>
+    var x = document.getElementsByTagName("title");
+    document.getElementById("demo3").innerHTML =
+    "The title of this document is: " + x[0].innerHTML;
+    </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
