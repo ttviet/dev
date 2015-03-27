@@ -15,39 +15,17 @@
     </head>
     <body>
     <div class="container" >
-    <p>JavaScript Closures</p>
-    <p>Counting with a global variable.</p>
+      <p id="intro">Hello World!</p>
 
-    <button type="button" onclick="myFunction()">Count!</button>
+      <p>This example demonstrates the <b>getElementById</b> method!</p>
 
-    <p id="demo3"></p>
+      <p id="demo5"></p>
 
-    <script>
-    var counter = 0;
-
-    function add() {
-        return counter += 1;
-    }
-
-    function myFunction(){
-        document.getElementById("demo3").innerHTML = add();
-    }
-    </script>
-
-    <button type="button" onclick="myFunction1()">Count!</button>
-
-    <p id="demo4"></p>
-
-    <script>
-    var add1 = (function () {
-        var counter1 = 0;
-        return function () {return counter1 += 1;}
-    })();
-
-    function myFunction1(){
-        document.getElementById("demo4").innerHTML = add1();
-    }
-    </script>
+      <script>
+      myElement = document.getElementById("intro");
+      document.getElementById("demo5").innerHTML =
+      "The text from the intro paragraph is " + myElement.innerHTML;
+      </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
