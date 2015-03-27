@@ -15,20 +15,30 @@
     </head>
     <body>
     <div class="container" >
+    <p>JavaScript Function Parameters</p>
     <p id="demo"></p>
     <p id="demo1"></p>
-    <p id="demo2"></p>
-    <p id="demo3"></p>
-      <script>
-      var x = function (a, b) {return a * b};
-      document.getElementById("demo").innerHTML = x(2, 3);
-      var x = function (a, b) {return a * b};
-      var z = x(4, 3);
-      document.getElementById("demo1").innerHTML = z;
-      var myFunction = function (a, b) {return a * b};
-      var x = myFunction(4, 3);
-      document.getElementById("demo2").innerHTML = x;
-      </script>
+
+    <script>
+    function findMax() {
+        var i, max = 0;
+        for(i = 0; i < arguments.length; i++) {
+            if (arguments[i] > max) {
+                max = arguments[i];
+            }
+        }
+        return max;
+    }
+    function sumAll() {
+        var i, sum = 0;
+        for (i = 0; i < arguments.length; i++) {
+            sum += arguments[i];
+        }
+        return sum;
+    }
+    document.getElementById("demo").innerHTML = findMax(1, 123, 500, 115, 44, 88);
+    document.getElementById("demo1").innerHTML = sumAll(1, 123, 500, 115, 44, 88);
+    </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
