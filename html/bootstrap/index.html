@@ -15,17 +15,49 @@
     </head>
     <body>
     <div class="container" >
-    <p id="demo">Viet Truong Thanh</p>
-    <p id="p1">Viet Truong Thanh</p>
+    <h1 onclick="this.innerHTML='Alo Alo'">Viet</h1>
+
+    <h1 onclick="changeText(this)">Viet ...</h1>
     <script>
-    document.getElementById("demo").style.color= "red";
-    document.getElementById("demo").style.backgroundColor= "blue";
-    document.getElementById("demo").style.fontSize= "40px";
-    document.getElementById("demo").style.fontFamily= "Tahoma";
-    document.getElementById("demo").style.textAlign= "center";
+    function changeText(id) {
+        id.innerHTML = "Alo 2";
+    }
+
     </script>
-    <input type="button" value="Hide text" onclick="document.getElementById('p1').style.visibility='hidden'">
-    <input type="button" value="Show text" onclick="document.getElementById('p1').style.visibility='visible'">
+
+    <button onclick="displayDate()">Ngay gio hien tai??</button>
+
+    <script>
+    function displayDate() {
+        document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+
+    <p id="demo"></p>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"  onmousedown="mDown(this)" onmouseup="mUp(this)"
+    style="background-color:#DD0011; width:150px; height:50px; padding:15px;">
+    Hi</div>
+
+    <script>
+    function mOver(obj) {
+        obj.innerHTML = "Hello"
+    }
+
+    function mOut(obj) {
+        obj.innerHTML = "Hi"
+    }
+    function mDown(obj) {
+        obj.style.backgroundColor = "#1ec5e5";
+        obj.innerHTML = "Release Me";
+    }
+
+    function mUp(obj) {
+        obj.style.backgroundColor="#D94A38";
+        obj.innerHTML="Thank You";
+    }
+    </script>
+
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
