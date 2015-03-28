@@ -15,34 +15,16 @@
     </head>
     <body>
     <div class="container" >
-    <div id="div1">
-    <p id="p1">This is a paragraph.</p>
-    <p id="p2">This is another paragraph.</p>
-    </div>
+        <p id="demo"></p>
 
-    <script>
-    var para = document.createElement("p");
-    var node = document.createTextNode("This is new.");
-    para.appendChild(node);
-
-    var element = document.getElementById("div1");
-    var child = document.getElementById("p1");
-    element.insertBefore(para,child);
-    </script>
-    <script>
-    var parent = document.getElementById("div1");
-    var child = document.getElementById("p1");
-    parent.removeChild(child);
-    </script>
-    <script >
-    var para1 = document.createElement("p");
-    var node1 = document.createTextNode("ajsaj asdjdj ");
-    para1.appendChild(node1);
-
-    var parent1 = document.getElementById("div1");
-    var child1 = document.getElementById("p2");
-    parent1.replaceChild(para1,child1);
-    </script>
+        <script>
+        document.getElementById("demo").innerHTML =
+        "Screen has " + "<br>" + screen.width + " width "
+        + screen.height + " height" + "<br>"
+        + " Screen Pixel Depth: " + screen.pixelDepth + "<br>"
+        + "Screen Color Depth: " + screen.colorDepth + "<br>"
+        + " Available Screen Height: " + screen.availHeight;
+        </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
