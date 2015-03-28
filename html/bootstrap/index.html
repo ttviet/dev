@@ -15,52 +15,17 @@
     </head>
     <body>
     <div class="container" >
-        <button id="myBtn">Try it</button>
+        <h1 id="intro">My First Page</h1>
 
-            <script>
-            var x = document.getElementById("myBtn");
-            x.addEventListener("click", myFunction);
-            x.addEventListener("click", someOtherFunction);
-
-            function myFunction() {
-                alert ("Hello World!");
-            }
-
-            function someOtherFunction() {
-                alert ("This function was also executed!");
-            }
-        </script>
-
-        <br/><br/><br/><br/>
-
-        <button id="myBtn1">Try it</button>
-
-        <p id="demo1"></p>
+        <p id="demo">Hello World!</p>
 
         <script>
-            var x = document.getElementById("myBtn1");
-            x.addEventListener("mouseover", myFunction);
-            x.addEventListener("click", mySecondFunction);
-            x.addEventListener("mouseout", myThirdFunction);
-
-            function myFunction() {
-                document.getElementById("demo1").innerHTML += "Moused over!<br>";
-            }
-
-            function mySecondFunction() {
-                document.getElementById("demo1").innerHTML += "Clicked!<br>";
-            }
-
-            function myThirdFunction() {
-                document.getElementById("demo1").innerHTML += "Moused out!<br>";
-            }
+        var myText = document.getElementById("intro").childNodes[1].nodeValue;
+        document.getElementById("demo").innerHTML = myText;
         </script>
-        <p id="demo"></p>
-
         <script>
-        window.addEventListener("resize", function(){
-            document.getElementById("demo").innerHTML = Math.floor((Math.random() * 100) + 1);
-        });
+        alert(document. documentElement.innerHTML);
+        alert(document. body.innerHTML);
         </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
