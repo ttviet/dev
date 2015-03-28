@@ -15,49 +15,53 @@
     </head>
     <body>
     <div class="container" >
-    <h1 onclick="this.innerHTML='Alo Alo'">Viet</h1>
+        <button id="myBtn">Try it</button>
 
-    <h1 onclick="changeText(this)">Viet ...</h1>
-    <script>
-    function changeText(id) {
-        id.innerHTML = "Alo 2";
-    }
+            <script>
+            var x = document.getElementById("myBtn");
+            x.addEventListener("click", myFunction);
+            x.addEventListener("click", someOtherFunction);
 
-    </script>
+            function myFunction() {
+                alert ("Hello World!");
+            }
 
-    <button onclick="displayDate()">Ngay gio hien tai??</button>
+            function someOtherFunction() {
+                alert ("This function was also executed!");
+            }
+        </script>
 
-    <script>
-    function displayDate() {
-        document.getElementById("demo").innerHTML = Date();
-    }
-    </script>
+        <br/><br/><br/><br/>
 
-    <p id="demo"></p>
+        <button id="myBtn1">Try it</button>
 
-    <div onmouseover="mOver(this)" onmouseout="mOut(this)"  onmousedown="mDown(this)" onmouseup="mUp(this)"
-    style="background-color:#DD0011; width:150px; height:50px; padding:15px;">
-    Hi</div>
+        <p id="demo1"></p>
 
-    <script>
-    function mOver(obj) {
-        obj.innerHTML = "Hello"
-    }
+        <script>
+            var x = document.getElementById("myBtn1");
+            x.addEventListener("mouseover", myFunction);
+            x.addEventListener("click", mySecondFunction);
+            x.addEventListener("mouseout", myThirdFunction);
 
-    function mOut(obj) {
-        obj.innerHTML = "Hi"
-    }
-    function mDown(obj) {
-        obj.style.backgroundColor = "#1ec5e5";
-        obj.innerHTML = "Release Me";
-    }
+            function myFunction() {
+                document.getElementById("demo1").innerHTML += "Moused over!<br>";
+            }
 
-    function mUp(obj) {
-        obj.style.backgroundColor="#D94A38";
-        obj.innerHTML="Thank You";
-    }
-    </script>
+            function mySecondFunction() {
+                document.getElementById("demo1").innerHTML += "Clicked!<br>";
+            }
 
+            function myThirdFunction() {
+                document.getElementById("demo1").innerHTML += "Moused out!<br>";
+            }
+        </script>
+        <p id="demo"></p>
+
+        <script>
+        window.addEventListener("resize", function(){
+            document.getElementById("demo").innerHTML = Math.floor((Math.random() * 100) + 1);
+        });
+        </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
