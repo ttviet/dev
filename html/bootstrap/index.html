@@ -15,18 +15,34 @@
     </head>
     <body>
     <div class="container" >
-        <h1 id="intro">My First Page</h1>
+    <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    </div>
 
-        <p id="demo">Hello World!</p>
+    <script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new.");
+    para.appendChild(node);
 
-        <script>
-        var myText = document.getElementById("intro").childNodes[1].nodeValue;
-        document.getElementById("demo").innerHTML = myText;
-        </script>
-        <script>
-        alert(document. documentElement.innerHTML);
-        alert(document. body.innerHTML);
-        </script>
+    var element = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    element.insertBefore(para,child);
+    </script>
+    <script>
+    var parent = document.getElementById("div1");
+    var child = document.getElementById("p1");
+    parent.removeChild(child);
+    </script>
+    <script >
+    var para1 = document.createElement("p");
+    var node1 = document.createTextNode("ajsaj asdjdj ");
+    para1.appendChild(node1);
+
+    var parent1 = document.getElementById("div1");
+    var child1 = document.getElementById("p2");
+    parent1.replaceChild(para1,child1);
+    </script>
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
