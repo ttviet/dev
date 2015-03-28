@@ -12,19 +12,21 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <script>
+        function Back() {
+        window.history.back()
+        }
+        </script>
+        <script>
+        function Forward() {
+        window.history.forward()
+        }
+        </script>
     </head>
     <body>
     <div class="container" >
-        <p id="demo"></p>
-
-        <script>
-        document.getElementById("demo").innerHTML =
-        "Screen has " + "<br>" + screen.width + " width "
-        + screen.height + " height" + "<br>"
-        + " Screen Pixel Depth: " + screen.pixelDepth + "<br>"
-        + "Screen Color Depth: " + screen.colorDepth + "<br>"
-        + " Available Screen Height: " + screen.availHeight;
-        </script>
+        <input type="button" value="Back" onclick="Back()">
+        <input type="button" value="Forward" onclick="Forward()">
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
