@@ -39,7 +39,33 @@
             document.getElementById("demo1").innerHTML =
             "Chao " + person + "!Chuc mot ngay tot lanh !";
         }
+        </script>        
+	<button onclick="myFunction()">Thu thoi</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+            var x;
+            if (confirm("Press a button!") == true) {
+                x = "Chap nhan";
+            } else {
+                x = "Da huy";
+            }
+        document.getElementById("demo").innerHTML = x;
+        }
         </script>
+
+        <p id="demo1"></p>
+
+        <script >
+        var person = prompt("Nhap Ten Nao\nVi du", "Viet");
+        if (person != null) {
+            document.getElementById("demo1").innerHTML =
+            "Chao " + person + "!Chuc mot ngay tot lanh !";
+        }
+        </script>
+
     </div>
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
